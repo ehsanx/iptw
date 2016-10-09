@@ -1,0 +1,11 @@
+Package: iptw
+Type: Package
+Title: Inverse Probability of Treatment Weighting
+Version: 1.0
+Date: 2012-02-25
+Author: Ehsan Karim <ehsan@alumni.ubc.ca>
+Maintainer: Ehsan Karim <ehsan@alumni.ubc.ca>
+Description: This package calculates various measures of association and helps understand and visualize the link between causal models such as Marginal Structural Models and Standerdized measures.
+Suggests: survey, boot
+License: GPL 2 or newer
+Packaged: 2012-02-25 15:27:09 UTC; wildscop

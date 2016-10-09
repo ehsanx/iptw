@@ -54,6 +54,7 @@ iptw.regression(form.table.object, type = "sw")
 # requires grid and survey package
 
 graph(form.table.object, type = "sw")
+# Maps probabilities and frequesncies
 ```
 ### Author 
 * Ehsan Karim :octocat: Feel free to [report](http://www.ehsankarim.com/) any errors / update suggestions. 

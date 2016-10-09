@@ -23,15 +23,26 @@ help(package="iptw")
 r1 <- .9
 r0 <- .5
 measures.calc(r1,r0)
-form.table.object <- form.table(Y1A1L1=150, Y1A0L1=45, Y1A1L0=20, Y1A0L0=5, Y0A1L1=300, Y0A0L1=10, Y0A1L0=40, Y0A0L0=55)
 
+form.table.object <- form.table(Y1A1L1=150, 
+                                Y1A0L1=45, 
+                                Y1A1L0=20, 
+                                Y1A0L0=5, 
+                                Y0A1L1=300, 
+                                Y0A0L1=10, 
+                                Y0A1L0=40, 
+                                Y0A0L0=55)
 form.table.object
+
 ungrouped.data.object <- ungrouped.data(form.table.object)
 head(ungrouped.data.object)
+
 associational(form.table.object)
 standardization(form.table.object)
 iptw(form.table.object, type = "sw")
+
 iptw.regression(form.table.object, type = "sw") # requires grid and survey package
+
 graph(form.table.object, type = "sw")
 ```
 ### Author 
